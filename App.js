@@ -100,6 +100,7 @@ function delNote(index) {
     noteObj.splice(index, 1);
     titleObj.splice(index, 1);
     localStorage.setItem("myNotes", JSON.stringify(noteObj));
+    localStorage.setItem("myTitle", JSON.stringify(titleObj));
     showNotes();
 }
 
